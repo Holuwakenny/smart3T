@@ -6,12 +6,13 @@ import { AboutSection } from './components/About.tsx';
 import { BenefitsSection } from './components/Benefits.tsx';
 import { SectorsSection } from './components/Sectors.tsx';
 import { GallerySection } from './components/Gallery.tsx';
+import { SiteUpdates } from './components/SiteUpdates.tsx';
 import { Footer } from './components/Footer.tsx';
 
 const App: React.FC = () => {
   // Ensure phone number has NO spaces or special characters for wa.me
   const whatsappNumber = "2347033968785";
-  const whatsappText = encodeURIComponent("Hello Smart 3T Construction, I am interested in your services. Can we discuss my project?");
+  const whatsappText = encodeURIComponent("Hello Smart 3T Construction, I saw your site work images. I'd like to discuss a project.");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappText}`;
 
   return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
         <Hero />
         <AboutSection />
         <SectorsSection />
+        <SiteUpdates />
         <BenefitsSection />
         <GallerySection />
       </main>

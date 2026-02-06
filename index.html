@@ -16,7 +16,7 @@
         background-color: #ffffff;
       }
       .hero-overlay {
-        background: linear-gradient(90deg, rgba(9, 9, 11, 0.9) 0%, rgba(9, 9, 11, 0.6) 50%, rgba(9, 9, 11, 0) 100%);
+        background: linear-gradient(90deg, rgba(9, 9, 11, 0.92) 0%, rgba(9, 9, 11, 0.7) 50%, rgba(9, 9, 11, 0.2) 100%);
       }
       @keyframes pulse-soft {
         0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
@@ -38,12 +38,11 @@
         font-size: 0.75rem;
       }
       #root:empty::after {
-        content: "Loading Smart 3T...";
+        content: "Initializing Smart 3T...";
       }
     </style>
     <script>
-      // Global process safety for browser environment
-      window.process = window.process || { env: {} };
+      window.process = { env: {} };
     </script>
     <script type="importmap">
 {
