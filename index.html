@@ -18,6 +18,13 @@
       .hero-overlay {
         background: linear-gradient(90deg, rgba(9, 9, 11, 0.9) 0%, rgba(9, 9, 11, 0.6) 50%, rgba(9, 9, 11, 0) 100%);
       }
+      @keyframes pulse-soft {
+        0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+        50% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+      }
+      .animate-pulse-whatsapp {
+        animation: pulse-soft 2s infinite;
+      }
     </style>
     <script type="importmap">
     {
@@ -32,7 +39,5 @@
   </head>
   <body class="antialiased selection:bg-emerald-500 selection:text-white">
     <div id="root"></div>
-    <!-- Explicit module entry point to ensure Netlify/Browser loads the app -->
-    <script type="module" src="index.tsx"></script>
   </body>
 </html>
