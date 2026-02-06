@@ -1,16 +1,16 @@
 
 import React from 'react';
-import { Navigation } from './components/Navigation';
-import { Hero } from './components/Hero';
-import { AboutSection } from './components/About';
-import { BenefitsSection } from './components/Benefits';
-import { SectorsSection } from './components/Sectors';
-import { GallerySection } from './components/Gallery';
-import { Footer } from './components/Footer';
+import { Navigation } from './components/Navigation.tsx';
+import { Hero } from './components/Hero.tsx';
+import { AboutSection } from './components/About.tsx';
+import { BenefitsSection } from './components/Benefits.tsx';
+import { SectorsSection } from './components/Sectors.tsx';
+import { GallerySection } from './components/Gallery.tsx';
+import { Footer } from './components/Footer.tsx';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen selection:bg-emerald-500 selection:text-white">
+    <div className="min-h-screen">
       <Navigation />
       <main>
         <Hero />

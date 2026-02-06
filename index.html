@@ -4,22 +4,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smart 3T | Engineering & Construction Excellence</title>
+    <title>Smart 3T | Premier Engineering & Construction</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
       body {
         font-family: 'Inter', sans-serif;
         -webkit-font-smoothing: antialiased;
         background-color: #ffffff;
       }
-      .hero-gradient {
-        background: linear-gradient(to right, rgba(9, 9, 11, 0.95) 0%, rgba(9, 9, 11, 0.7) 40%, rgba(9, 9, 11, 0.1) 100%);
-      }
-      .text-balance {
-        text-wrap: balance;
+      .hero-overlay {
+        background: linear-gradient(90deg, rgba(9, 9, 11, 0.9) 0%, rgba(9, 9, 11, 0.6) 50%, rgba(9, 9, 11, 0) 100%);
       }
     </style>
     <script type="importmap">
@@ -35,5 +32,7 @@
   </head>
   <body class="antialiased selection:bg-emerald-500 selection:text-white">
     <div id="root"></div>
+    <!-- Explicit module entry point to ensure Netlify/Browser loads the app -->
+    <script type="module" src="index.tsx"></script>
   </body>
 </html>
